@@ -1,0 +1,59 @@
+*{
+    background-color: black;
+    color: white;
+}
+h1{
+    text-align: center;
+}
+
+#gameBoard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 500px;
+    width: 500px;
+    margin: 0 auto; 
+}
+#gameBoard > div{
+    background-color: #36454F;
+    box-shadow: inset 0px 0px 15px #000000;
+}
+#box0{
+    border-bottom: 4px solid #36454F;
+    border-right: 4px solid #36454F;
+}
+#box1{
+    border-bottom: 4px solid #36454F;
+    border-right: 4px solid #36454F;
+    border-left: 4px solid #36454F;
+}
+#box2{
+    border-bottom: 4px solid #36454F;
+    border-left: 4px solid #36454F;
+}
+#box3{
+    border-bottom: 4px solid #36454F;
+    border-right: 4px solid #36454F;
+    border-top: 4px solid #36454F;
+}
+#box4{
+    border: 4px solid #36454F;
+}
+#box5{
+    border-bottom: 4px solid #36454F;
+    border-left: 4px solid #36454F;
+    border-top: 4px solid #36454F;
+}
+#box6{
+    border-top: 4px solid #36454F;
+    border-right: 4px solid #36454F;
+}
+#box7{
+    border-top: 4px solid #36454F;
+    border-left: 4px solid #36454F;
+    border-right: 4px solid #36454F;
+}
+#box8{
+    border-top: 4px solid #36454F;
+    border-left: 4px solid #36454F;
+}
