@@ -1,59 +1,96 @@
 *{
-    background-color: black;
-    color: white;
+    background-color: #1B2430;
+    color: #D6D5A8;
 }
 h1{
     text-align: center;
+    background-color: #D6D5A8;
+    padding: 20px;
+    color: #1B2430;
 }
 
 #gameBoard{
+    border: 6px solid #7378a5;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 500px;
-    width: 500px;
-    margin: 0 auto; 
+    max-width: 350px;
+    height: 350px;
+    margin: 80px auto;
 }
 #gameBoard > div{
-    background-color: #36454F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    color: #D6D5A8;
+    background-color: #51557E;
     box-shadow: inset 0px 0px 15px #000000;
 }
 #box0{
-    border-bottom: 4px solid #36454F;
-    border-right: 4px solid #36454F;
+    border-bottom: 4px solid #7378a5;
+    border-right: 4px solid #7378a5;
 }
 #box1{
-    border-bottom: 4px solid #36454F;
-    border-right: 4px solid #36454F;
-    border-left: 4px solid #36454F;
+    border-bottom: 4px solid #7378a5;
+    border-right: 4px solid #7378a5;
+    border-left: 4px solid #7378a5;
 }
 #box2{
-    border-bottom: 4px solid #36454F;
-    border-left: 4px solid #36454F;
+    border-bottom: 4px solid #7378a5;
+    border-left: 4px solid #7378a5;
 }
 #box3{
-    border-bottom: 4px solid #36454F;
-    border-right: 4px solid #36454F;
-    border-top: 4px solid #36454F;
+    border-bottom: 4px solid #7378a5;
+    border-right: 4px solid #7378a5;
+    border-top: 4px solid #7378a5;
 }
 #box4{
-    border: 4px solid #36454F;
+    border: 4px solid #7378a5;
 }
 #box5{
-    border-bottom: 4px solid #36454F;
-    border-left: 4px solid #36454F;
-    border-top: 4px solid #36454F;
+    border-bottom: 4px solid #7378a5;
+    border-left: 4px solid #7378a5;
+    border-top: 4px solid #7378a5;
 }
 #box6{
-    border-top: 4px solid #36454F;
-    border-right: 4px solid #36454F;
+    border-top: 4px solid #7378a5;
+    border-right: 4px solid #7378a5;
 }
 #box7{
-    border-top: 4px solid #36454F;
-    border-left: 4px solid #36454F;
-    border-right: 4px solid #36454F;
+    border-top: 4px solid #7378a5;
+    border-left: 4px solid #7378a5;
+    border-right: 4px solid #7378a5;
 }
 #box8{
-    border-top: 4px solid #36454F;
-    border-left: 4px solid #36454F;
+    border-top: 4px solid #7378a5;
+    border-left: 4px solid #7378a5;
+}
+
+.contents{
+    margin-top: 20px;
+    width: 100%;
+    height: 10vh;
+    padding: 10px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#resetBtn{
+    background-color: #816797;
+    color: #D6D5A8;
+    font-weight: bolder;
+    padding: 15px;
+    width: 100px;
+    border-radius: 15px;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+#resetBtn:hover{
+    opacity: 1;
 }
